@@ -1,9 +1,6 @@
-import allure
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-
-@allure.title('Базовые методы')
 class BasePage:
     def __init__(self, driver, time=5):
         self.driver = driver

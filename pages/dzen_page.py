@@ -1,9 +1,6 @@
-from locators.dzen_locators import DzenLocators
+from locators.dzen_page_locators import DzenPageLocators
 from pages.base_page import BasePage
-import allure
 
-
-class LogoDzen(BasePage):
-    @allure.step('Проверка открытия страницы "Яндекс Дзен"')
+class DzenPage(BasePage):
     def check_dzen_logo(self):
-        return self.find_element(DzenLocators.LOGO_DZEN)
+        return self.find_element(DzenPageLocators.LOGO_DZEN)
